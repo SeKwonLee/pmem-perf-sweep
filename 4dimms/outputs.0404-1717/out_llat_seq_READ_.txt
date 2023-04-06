@@ -1,0 +1,40 @@
+Intel(R) Memory Latency Checker - v3.10
+Command line parameters: --loaded_latency -g./outputs.0404-1717/delays.txt -o./outputs.0404-1717/PMEM_perthread.txt -t30 -Z -c0 
+*** Unable to modify prefetchers (try executing 'modprobe msr')
+*** So, enabling random access for latency measurements
+Per-thread configuration from ./outputs.0404-1717/PMEM_perthread.txt
+Thread id   0, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   1, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   2, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   3, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   4, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   5, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   6, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   7, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+Thread id   8, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem1
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	709.84	  28904.0
+ 00050	636.75	  20840.7
+ 00100	605.71	  18488.4
+ 00200	567.10	  19341.1
+ 00300	508.72	  17301.8
+ 00400	481.90	  14023.2
+ 00500	457.77	  11603.7
+ 00700	444.61	   8436.5
+ 00850	439.05	   7000.7
+ 01000	433.80	   5988.5
+ 01150	429.14	   5236.9
+ 01300	427.52	   4655.6
+ 01500	424.65	   4061.2
+ 01700	421.85	   3606.5
+ 02500	416.57	   2509.2
+ 03500	411.60	   1840.7
+ 05000	408.24	   1337.7
+ 20000	400.43	    455.5
+ 40000	399.49	    307.8
+ 80000	397.14	    235.1

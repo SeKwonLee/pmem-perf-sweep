@@ -1,0 +1,96 @@
+=======================================================================
+Starting PMEM bandwidth and latency measurements using MLC
+=======================================================================
+Using pmem memory mounted to:     /mnt/pmem4
+Using MLC command:                /home/sekwon/projects/mlc/Linux/mlc
+Using MLC AVX512 Opt:             1
+MLC version:                      v3.10
+MLC output files stored in:       ./outputs.0404-2106
+Mount found, FS type:             ext4
+Kernel version:                   5.16.0-pmkv+
+CPUs detected:                    16
+Range of Socket 0:  		  0-15
+PMEM DIMM size:                   SDP - 128GB
+DIMM power limit:                 15W
+Management software version:
+Intel(R) Optane(TM) Persistent Memory Command Line Interface Version 02.00.00.3885
+PMEM Firmware versions:
+ DimmID | ActiveFWVersion | StagedFWVersion 
+============================================
+ 0x0010 | 02.02.00.1553   | N/A
+ 0x0210 | 02.02.00.1553   | N/A
+ 0x0110 | 02.02.00.1553   | N/A
+ 0x0310 | 02.02.00.1553   | N/A
+ 0x1010 | 02.02.00.1553   | N/A
+ 0x1210 | 02.02.00.1553   | N/A
+ 0x1110 | 02.02.00.1553   | N/A
+ 0x1310 | 02.02.00.1553   | N/A
+NDCTL version:                74
+PMEM count in namespace:      1
+
+Finding optimal thread count for the measurements. This might take a while, please be patient.  
+Optimal thread count found. Starting PMEM measurements.
+
+PMEM idle sequential latency: Each iteration took 961.2 base frequency clocks (	401.4	ns)
+PMEM idle random     latency: Each iteration took 965.6 base frequency clocks (	403.3	ns)
+
+PMEM bandwidth: using 2 for sequential read, 2 for random read,
+                       2 for sequential write, 1 for random write,
+                       2 for sequential mixed, 1 for random mixed.
+max PMEM bandwidth for bw_seq_READ_2.txt - Delay, nS, MBPS:  00000	  0.00	   7568.2
+max PMEM bandwidth for bw_rnd_READ_2.txt - Delay, nS, MBPS:  00000	  0.00	   1999.3
+max PMEM bandwidth for bw_seq_WRNT_2.txt - Delay, nS, MBPS:  00000	  0.00	   2225.4
+max PMEM bandwidth for bw_rnd_WRNT_1.txt - Delay, nS, MBPS:  00000	  0.00	    561.6
+max PMEM bandwidth for bw_seq_21NT_2.txt - Delay, nS, MBPS:  00000	  0.00	   4234.6
+max PMEM bandwidth for bw_rnd_21NT_1.txt - Delay, nS, MBPS:  00000	  0.00	   1034.3
+
+2 core PMEM sequential read loaded latency sweep:
+ Delay nS         MBPS
+ 00000	740.97	   7260.7
+ 00050	650.34	   6490.2
+ 00100	599.84	   5884.7
+ 00200	544.26	   5408.2
+ 00300	488.63	   4494.0
+ 00400	469.42	   3624.5
+ 00500	446.95	   3011.7
+ 00700	441.25	   2218.6
+ 00850	440.46	   1859.5
+ 01000	432.81	   1608.4
+ 01150	424.25	   1423.1
+ 01300	427.35	   1276.7
+ 01500	423.77	   1129.1
+ 01700	419.00	   1016.6
+ 02500	416.80	    742.6
+ 03500	410.00	    577.5
+ 05000	408.58	    451.9
+ 20000	402.44	    233.0
+ 40000	395.07	    199.0
+ 80000	391.22	    182.1
+2 core PMEM random read loaded latency sweep:
+ Delay nS         MBPS
+ 00000	1039.01	   1986.1
+ 00050	674.96	   1744.8
+ 00100	509.72	   1382.7
+ 00200	503.95	   1331.1
+ 00300	500.44	   1292.5
+ 00400	495.27	   1254.4
+ 00500	486.06	   1220.3
+ 00700	478.16	   1153.1
+ 00850	475.90	   1106.9
+ 01000	473.64	   1066.4
+ 01150	469.95	   1029.4
+ 01300	466.80	    994.6
+ 01500	463.25	    951.6
+ 01700	456.41	    914.3
+ 02500	448.82	    789.6
+ 03500	439.90	    679.1
+ 05000	431.23	    570.5
+ 20000	397.75	    290.4
+ 40000	391.97	    232.4
+ 80000	389.84	    199.9
+Collecting DCPMM and System info logs...
+Logs directory: ./outputs.0404-2106/
+Please attach log directory if you need to report any measurement
+=======================================================================
+PMEM bandwidth and latency measurements Complete
+=======================================================================

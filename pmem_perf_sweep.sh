@@ -125,11 +125,11 @@ function handle_args() {
   TOKENS=( $($MLC --version 2>&1 | head -n 1) )
   MLC_VER=${TOKENS[5]}
   echo "MLC version:                      $MLC_VER"
-  if [[ ! "${MLC_VER//v}" =~ [0-9] ]] || (( $(echo  "${MLC_VER//v} < 3.9" | bc -l) )); then
-    echo "MLC version not supported. Please use MLC version >= 3.9"
-    echo "Exiting."
-    exit 0
-  fi
+  #if [[ ! "${MLC_VER//v}" =~ [0-9] ]] || (( $(echo  "${MLC_VER//v} < 3.9" | bc -l) )); then
+  #  echo "MLC version not supported. Please use MLC version >= 3.9"
+  #  echo "Exiting."
+  #  exit 0
+  #fi
   echo "MLC output files stored in:       $OUTPUT_PATH"
 
   if mountpoint -q -- "$PMEM_PATH"; then

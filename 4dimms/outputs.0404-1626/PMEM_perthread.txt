@@ -1,0 +1,2 @@
+0  R seq 400000 pmem /mnt/pmem0
+1-5 R rand 400000 pmem /mnt/pmem0

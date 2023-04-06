@@ -1,0 +1,41 @@
+Intel(R) Memory Latency Checker - v3.10
+Command line parameters: --loaded_latency -g./outputs.0404-1626/delays.txt -o./outputs.0404-1626/PMEM_perthread.txt -t30 -Z -c0 
+*** Unable to modify prefetchers (try executing 'modprobe msr')
+*** So, enabling random access for latency measurements
+Per-thread configuration from ./outputs.0404-1626/PMEM_perthread.txt
+Thread id   0, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   1, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   2, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   3, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   4, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   5, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   6, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   7, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   8, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+Thread id   9, traffic pattern   R,  seq access,   400000 KiB buffer, pmem memory, pmem path /mnt/pmem0
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	706.90	  29311.4
+ 00050	570.00	  21733.5
+ 00100	540.26	  19635.8
+ 00200	510.89	  20622.0
+ 00300	449.98	  19221.6
+ 00400	421.37	  15712.7
+ 00500	393.10	  13049.6
+ 00700	380.57	   9497.0
+ 00850	373.10	   7883.3
+ 01000	366.75	   6745.5
+ 01150	364.71	   5899.5
+ 01300	361.04	   5247.7
+ 01500	356.94	   4579.7
+ 01700	355.74	   4066.8
+ 02500	348.73	   2833.7
+ 03500	343.98	   2082.1
+ 05000	340.70	   1516.6
+ 20000	331.42	    526.0
+ 40000	329.34	    360.8
+ 80000	324.37	    280.6
